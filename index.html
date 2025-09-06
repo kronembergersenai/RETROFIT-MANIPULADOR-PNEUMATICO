@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrofit Manipulador Eletropneumático - Dashboard Técnico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=lr_SFw5MnsiCSB3OLUIkllOll5R7IvCVFcx0X8-YxfWVVjXBWCYfCj64FKtqNHkl3rF5d7aXmdiV48OIhs9IxQmAgOqYRJb35xqCtiz64ztdyfi3yirDzKC-SDk5hnIEEYWRrF0fRr0kCyhT4SRqMp7TsbZkIwX_w61X5n7RsdPPaVNYsqODNRWuItbndqMA1E7a6Dfn2noaBviF6TP24w1aySswNgImw6qLZB1K0BH-4ViyuKtKZXd6_FJwHh-lQwHnHuSup09lP9sXe0plF-ztuf1TCa4IHIfMRV2w4EmLGBgVMyBvph2Q49VCdzH7zPBcbkh-0cvMYwVv5qowfTM8_OkaCOo2w-C-69iw5QJ-yUDGRP67nvgftQhwrIyyel8jB9NO0zRl7rqfuBgq4e6czDFjPsSO2x1Louy0XueuNyBPFGQchnA4hmYzdSJdRTvOg1XpObYxUouSHn7VSxlLDm13fct90o5XSwhniUfaTKWBCCbXrl75Cu8zVhAFJGA2TNYibFXQXLGNqO94e7frQ5sbDAtlaVFci-J0uh6Ean1Cd4GTDScFoAfFInxKZbO-EodNomqZYYguyr1cazqot1krwa-dUn5SjJbiIFvMc41p5DC2hR1nSf_nbBfy0ypq1rGQExrhniEr-yAiVXkxceIINmrI04PuI7cEDhiAPui928FcEOI1Mj6VnBvhO6OYat9oIxZ1D4_0qlJxCnORaXNfXQ36qk3wfXWbPhuv_BA3SW5IRQXzRxHUsWZqvZGBfL0IbFBcjv5EHZUPFhGsHjimoZE4nzdddBW4XXe1fbq0DUHwubx0UZGSrJ4IHvLvvJfH0-RoMaJd9aK81qToQn5WIGZqiAFt8u3wZl4qs7-QYLlI4wnZUtibaHOd8qGWloC3yNPHqkmDJDuPD_9VZPD0NEheSL6czqvwssdrqr6ktLemAFNJED8fGLZThd30L71o5TpEpkbZ6k17idMe7tJSfnwxdDsI7m6TH866vdMRW72UylQQ-HIyOgNDYE8Xr-X_cm8nanhGYTHusNe2blrfZgpsSu_bSO3vRtq2d9zPsCMlyJJSaCa6gT5S4oybAm_erDbJYx4xE_9mtgjD2sGGDneemCUEuAFJ9GNk96MVRhcz07f8gTI28jV063z-W7YA7bUPYqvzSfsRmph9gKc3FwOGIIthk2mFZEEVb1sNNKF52Orp4crz_dskgLibPTKKOeh-EyNodjMS-QkL5zv6tgEw30OWUFojsEqfX8g5W5yyj9NaJ6jdOCb5h7AXes8ofzhX8fOp0ZWdUq0XLGbrPS_2SLa1PbHc6XZR_1UitM30GUFC6h7Q2pu6127ZBI6BWVGyFaHRnS1h95BJtrHGVYvmlDEgwOR0GpbJzxHxTgbrBDh9AGda2NTeYr5iN8NoxYwmzPRaEGPIH9EWDzQE6DjZS6DSynNomfOeLJjMvESXc25AXzXWt6HwipCBk8uMg14zaLHKXt3fpVCFS68J2N7dbwxPLzkkqLs3m7usdA7g-g0LXtOSak-MYUnkriD8qP2dM9ZXA3RYQKodTHB2ZW_IZOrsR5lsuUqi1Jnm4Q8YeqkJwaMZ-RJs_1zCpVvTUyDillMMS-IMotxHTg3rZRyxYacbSzuNdF327tzhdMAakMg3XZ92NkVx_3ols8zcv1-OLPs5g3I3we1yKPDZXHX-svMyY9vpbXIob5oXvTZRhxFYovOAbqQyMzzUfmStcV9S5GttZ-fj9oKqVLBhKpCsBFnRBIcT_1crmWJz2bU8x8PxgYcf9Ahwf1GAc0gqrQS05C0PQ-U7uQ4EM2shhTNu23QXh9OBB5h-_AtI0gKAcn4xMfLvhtB3OFZ0hQB_dhOykd6adeXeiaYwrndhMXWFqk2EAENTm8rznxbcM75FFdQyIrfYM9sKE0qIHtkz0BG9jxBMxPoQQCYOMzUdts60Bje7axVH7OhFW1jNEs8mc6C1aiB6s4l3eekZcNbfzCjKa0vaV4WC7Nx6Rw8isKQAYdgoZZ3wtM7FGQAmcOxduF4D3e8ReYXEGRB1H-i8U7KHia2wgR3tdQHNQWxrakXxNARWQ_-opgqQEQIICuiOQypgm8lVacvYBkrzj49OIAWsEvlO1-A_P_rU2dqAJj-RNZaIDA2ilw1KyfQUrohJb_RSgNZNKQHghcXQSeK9vz8vP54EESECzvHO1OAmhP27NjcKh7z5NsmfjsQJ70WDZq62cSOuAdzJC_vfSfgine7W3tuuekREbU59ZwGfl3gjRBxCN8_o0_U" charset="UTF-8"></script></head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-cogs"></i>
+                <span>Retrofit Dashboard</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="#projeto" class="nav-link">Projeto</a>
+                <a href="#etapas" class="nav-link">Etapas</a>
+                <a href="#diagramas" class="nav-link">Diagramas</a>
+                <a href="#recursos" class="nav-link">Recursos</a>
+                <a href="#qrcodes" class="nav-link">QR Codes</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="projeto" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1><i class="fas fa-robot"></i> Retrofit de Manipulador Eletropneumático</h1>
+                    <p class="hero-description">
+                        Projeto técnico completo para modernização de equipamento didático com foco em 
+                        segurança, organização e funcionalidade educacional
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">11</span>
+                            <span class="stat-label">Etapas</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Eixos (X,Y,Z)</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">6</span>
+                            <span class="stat-label">Sensores</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resumo Técnico -->
+        <section class="summary-section">
+            <div class="container">
+                <h2><i class="fas fa-bullseye"></i> Resumo Técnico</h2>
+                <div class="summary-grid">
+                    <div class="summary-card objective">
+                        <div class="card-icon">🎯</div>
+                        <h3>Objetivo</h3>
+                        <p>Executar retrofit com foco em segurança, organização, documentação técnica e exercícios práticos de posicionamento cartesiano e pick and place.</p>
+                    </div>
+                    <div class="summary-card problem">
+                        <div class="card-icon">🔍</div>
+                        <h3>Problema</h3>
+                        <p>Kit atual dificulta conexão com CLP externo. Necessária modernização da infraestrutura pneumática e elétrica seguindo normas técnicas.</p>
+                    </div>
+                    <div class="summary-card tech">
+                        <div class="card-icon">🔧</div>
+                        <h3>Tecnologias</h3>
+                        <p>TIA Portal, QElectroTech, Fusion 360, CLPs Siemens S7-300/S7-1200, IHM KTP700, fabricação 3D.</p>
+                    </div>
+                    <div class="summary-card application">
+                        <div class="card-icon">🏗️</div>
+                        <h3>Aplicação</h3>
+                        <p>FabLab, Ensino Técnico, Indústria - ambiente educacional para automação industrial.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Tracker -->
+        <section id="etapas" class="progress-section">
+            <div class="container">
+                <h2><i class="fas fa-tasks"></i> Progresso das Etapas</h2>
+                <div class="progress-container">
+                    <div class="progress-item completed">
+                        <div class="progress-icon"><i class="fas fa-check"></i></div>
+                        <div class="progress-content">
+                            <h4>1. Levantamento Inicial</h4>
+                            <p>Inventário de componentes e definição de escopo</p>
+                        </div>
+                        <div class="progress-status">Concluído</div>
+                    </div>
+                    <div class="progress-item in-progress">
+                        <div class="progress-icon"><i class="fas fa-cog fa-spin"></i></div>
+                        <div class="progress-content">
+                            <h4>2. Plano de Execução</h4>
+                            <p>Estruturação do cronograma e recursos</p>
+                        </div>
+                        <div class="progress-status">Em Andamento</div>
+                    </div>
+                    <div class="progress-item pending">
+                        <div class="progress-icon"><i class="fas fa-clock"></i></div>
+                        <div class="progress-content">
+                            <h4>3. Adaptação Trilho DIN</h4>
+                            <p>Modernização da infraestrutura elétrica</p>
+                        </div>
+                        <div class="progress-status">Pendente</div>
+                    </div>
+                    <div class="progress-item pending">
+                        <div class="progress-icon"><i class="fas fa-clock"></i></div>
+                        <div class="progress-content">
+                            <h4>4. Instalação de Bornes</h4>
+                            <p>Organização das terminações elétricas</p>
+                        </div>
+                        <div class="progress-status">Pendente</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Cards -->
+        <section id="diagramas" class="cards-section">
+            <div class="container">
+                <h2><i class="fas fa-drafting-compass"></i> Recursos Técnicos</h2>
+                <div class="cards-grid">
+                    <div class="tech-card">
+                        <div class="card-header">
+                            <i class="fas fa-project-diagram"></i>
+                            <h3>Diagramas</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Diagramas elétricos e pneumáticos atualizados seguindo normas ISO/NBR</p>
+                            <ul class="feature-list">
+                                <li>Diagrama Eletropneumático</li>
+                                <li>Mapa de IO CLP</li>
+                                <li>Esquemas de Ligação</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-secondary">Ver Diagramas</button>
+                        </div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="card-header">
+                            <i class="fas fa-microchip"></i>
+                            <h3>Sistema CLP</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Configuração e programação dos controladores Siemens</p>
+                            <ul class="feature-list">
+                                <li>S7-300 / S7-1200</li>
+                                <li>TIA Portal</li>
+                                <li>IHM KTP700</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-secondary">Configurar</button>
+                        </div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="card-header">
+                            <i class="fas fa-cube"></i>
+                            <h3>Modelagem 3D</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Suportes customizados para sensores e componentes</p>
+                            <ul class="feature-list">
+                                <li>Fusion 360 / AutoCAD</li>
+                                <li>Impressão 3D</li>
+                                <li>Corte a Laser</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-secondary">Visualizar 3D</button>
+                        </div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="card-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Componentes</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Lista de materiais e especificações técnicas</p>
+                            <ul class="feature-list">
+                                <li>Trilho DIN + Bornes</li>
+                                <li>Mangueiras Pneumáticas</li>
+                                <li>Sensores Magnéticos</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-secondary">Lista Completa</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise Section -->
+        <section id="recursos" class="exercise-section">
+            <div class="container">
+                <h2><i class="fas fa-graduation-cap"></i> Exercícios Práticos</h2>
+                <div class="exercise-grid">
+                    <div class="exercise-card cartesian">
+                        <div class="exercise-icon">
+                            <i class="fas fa-vector-square"></i>
+                        </div>
+                        <div class="exercise-content">
+                            <h3>Posicionamento Cartesiano</h3>
+                            <p>Exercícios de referência dos eixos X-Y-Z usando sensores fim de curso e sequência lógica</p>
+                            <div class="exercise-features">
+                                <span class="feature-tag">Homing</span>
+                                <span class="feature-tag">Intertravamentos</span>
+                                <span class="feature-tag">Tolerâncias</span>
+                            </div>
+                        </div>
+                        <button class="btn-primary">Iniciar Exercício</button>
+                    </div>
+
+                    <div class="exercise-card pickplace">
+                        <div class="exercise-icon">
+                            <i class="fas fa-hand-paper"></i>
+                        </div>
+                        <div class="exercise-content">
+                            <h3>Pick and Place</h3>
+                            <p>Ciclos de pegar e depositar com controle de vácuo, temporizações e receitas na IHM</p>
+                            <div class="exercise-features">
+                                <span class="feature-tag">Controle Vácuo</span>
+                                <span class="feature-tag">Temporizações</span>
+                                <span class="feature-tag">Receitas IHM</span>
+                            </div>
+                        </div>
+                        <button class="btn-primary">Iniciar Exercício</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QR Code Section -->
+        <section id="qrcodes" class="qr-section">
+            <div class="container">
+                <h2><i class="fas fa-qrcode"></i> QR Codes Instrucionais</h2>
+                <div class="qr-grid">
+                    <div class="qr-card">
+                        <div class="qr-placeholder">
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                        <h4>Diagrama Elétrico</h4>
+                        <p>Acesso rápido aos esquemas elétricos atualizados</p>
+                    </div>
+                    <div class="qr-card">
+                        <div class="qr-placeholder">
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                        <h4>Checklist Partida</h4>
+                        <p>Procedimentos de verificação antes da operação</p>
+                    </div>
+                    <div class="qr-card">
+                        <div class="qr-placeholder">
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                        <h4>Vídeos Operação</h4>
+                        <p>Tutoriais em vídeo para operação e manutenção</p>
+                    </div>
+                    <div class="qr-card">
+                        <div class="qr-placeholder">
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                        <h4>Plano de Testes</h4>
+                        <p>Rotinas de teste e validação do sistema</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specifications -->
+        <section class="specs-section">
+            <div class="container">
+                <h2><i class="fas fa-cog"></i> Especificações do Equipamento</h2>
+                <div class="specs-container">
+                    <div class="specs-card">
+                        <h3>Dimensões da Mesa</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Comprimento:</span>
+                                <span class="spec-value">700 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Largura:</span>
+                                <span class="spec-value">560 mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Altura:</span>
+                                <span class="spec-value">840 mm</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="specs-card">
+                        <h3>Sistema Pneumático</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Pressão:</span>
+                                <span class="spec-value">1,5 - 8 bar</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Vazão:</span>
+                                <span class="spec-value">500 lpm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Cilindros X/Y:</span>
+                                <span class="spec-value">Ø32mm, 250mm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Cilindro Z:</span>
+                                <span class="spec-value">Ø20mm, 100mm</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="specs-card">
+                        <h3>Sistema Elétrico</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Alimentação:</span>
+                                <span class="spec-value">24 Vcc</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Sensores:</span>
+                                <span class="spec-value">6 magnéticos</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Válvulas:</span>
+                                <span class="spec-value">4x 5/2 vias + vácuo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Projeto Retrofit</h4>
+                    <p>Modernização de manipulador eletropneumático para ensino técnico</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Tecnologias</h4>
+                    <ul>
+                        <li>Siemens S7-300/S7-1200</li>
+                        <li>TIA Portal</li>
+                        <li>IHM KTP700</li>
+                        <li>Fusion 360</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>📧 projeto@retrofit.edu<br>📱 QR Codes disponíveis no equipamento</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Projeto Retrofit - Dashboard Técnico Educacional</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll effect for navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Simple progress animation
+            const progressItems = document.querySelectorAll('.progress-item');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateX(0)';
+                    }
+                });
+            });
+
+            progressItems.forEach(item => {
+                observer.observe(item);
+            });
+        });
+    </script>
+</body>
+</html>
